@@ -1,0 +1,57 @@
+{
+    "path": "./node_modules/cz-conventional-changelog",
+    "types": {
+        "🌱 新增": {
+            "description": "新增页面、新增逻辑",
+            "title": "New"
+        },
+        "🍭 调整": {
+            "description": "交互调整，逻辑调整",
+            "title": "Style"
+        },
+        "🍁 优化": {
+            "description": "交互优化，可有可无",
+            "title": "Style"
+        },
+        "🍔 重构": {
+            "description": "重构",
+            "title": "Build"
+        },
+        "🍎 打包": {
+            "description": "打包",
+            "title": "Build"
+        },
+        "🌷 样式": {
+            "description": "css调整",
+            "title": "Style"
+        },
+        "📖 文案": {
+            "description": "文档或者文案的调整",
+            "title": "Document"
+        },
+        "📟 接口": {
+            "description": "接口联调页面",
+            "title": "Connect"
+        },
+        "🐛 Bug": {
+            "description": "Bug修改",
+            "title": "Bugs"
+        },
+        "🔧 配置": {
+            "description": "配置调整",
+            "title": "Config"
+        },
+        "🚌 公共": {
+            "description": "公共方法等",
+            "title": "Common"
+        },
+        "🦋 测试": {
+            "description": "单元测试",
+            "title": "Test"
+        },
+        "🍒 其他": {
+            "description": "其他",
+            "title": "Other"
+        }
+    }
+}
