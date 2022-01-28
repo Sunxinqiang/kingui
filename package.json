@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "pnpm dev --dir ./packages/kingui",
-    "build": "pnpm dev --dir ./packages/kingui",
+    "docs": "pnpm dev --dir ./packages/docs",
+    "build": "pnpm build --dir ./packages/kingui",
     "preview": "pnpm dev --dir ./packages/kingui"
   },
   "packageManager": "pnpm",

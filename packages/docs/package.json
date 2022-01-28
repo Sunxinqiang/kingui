@@ -1,8 +1,7 @@
 {
-  "name": "kingui",
+  "name": "docs",
   "version": "0.0.0",
-  "main": "dist/kingui.umd.js",
-  "module": "dist/kingui.es.js",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,6 +12,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.0.0",
-    "vite": "^2.7.2"
+    "vite": "^2.7.2",
+    "kingui": "workspace:*"
   }
 }

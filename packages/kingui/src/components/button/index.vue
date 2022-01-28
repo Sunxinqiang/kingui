@@ -1,14 +1,14 @@
-<script setup lang="ts">
+<script setup>
 </script>
 
 <template>
-  <button class="king-btn">
+  <button class="k-btn">
     <slot></slot>
   </button>
 </template>
 
 <style scoped>
-.king-btn {
+.k-btn {
   color: red;
   border: 1px solid #ddd;
 }

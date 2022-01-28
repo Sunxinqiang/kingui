@@ -1,10 +1,11 @@
 <script setup>
-import Button from './components/button/index.vue'
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <h3>KingUi Mobile Components</h3>
-  <Button>button</Button>
+  <KButton>123</KButton>
 </template>
 
 <style>
