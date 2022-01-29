@@ -1,15 +1,57 @@
 <script setup>
+const props = defineProps({
+  type: {
+    type: String,
+    default: 'default',
+    validator (value) {
+      return ['success', 'primary', 'warning', 'danger', 'default'].includes(value)
+    }
+  },
+  fluid: Boolean,
+})
 </script>
 
 <template>
-  <button class="k-btn">
+  <button class="k-btn" :class="{[`k-${type}`]: true, fluid}">
     <slot></slot>
   </button>
 </template>
 
-<style scoped>
+<style lang="less" scoped>
+@import '../../css/colors.less';
 .k-btn {
-  color: red;
-  border: 1px solid #ddd;
+  position: relative;
+  font-size: 0.32rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.06rem;
+  color: @color-default;
+  border: 0.02rem solid @color-default;
+  each(@type-list, .(@type){
+    &.k-@{type} {
+      @color-key: ~'color-@{type}';
+      color: #fff;
+      border-color: @@color-key;
+      background-color:  @@color-key;
+    }
+  })
+  &.k-default {
+    color: @color-default;
+    border-color: lighten(@color-default, 50%);
+    background-color: #fff;
+  }
+  &.fluid {
+    width: 100%;
+  }
+  &::before {
+    opacity: 0;
+    content: ' ';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: #000;
+    border-color: #000;
+  }
+  &:active::before {
+    opacity: 0.1;
+  }
 }
 </style>
