@@ -46,8 +46,17 @@
       :type="type"
       disabled>{{type}}</Button>
   </SectionWrap>
+  <SectionWrap title="大小：size">
+    <Button
+      class="mg-bottom-8 mg-right-8"
+      v-for="(size, index) in sizes"
+      :size="size"
+      :type="types[index]"
+      >{{size}}</Button>
+  </SectionWrap>
 </template>
 
 <script setup>
 const types = ['success', 'primary', 'warning', 'danger', 'default']
+const sizes = ['large', 'normal', 'small', 'mini']
 </script>

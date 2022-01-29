@@ -10,6 +10,13 @@ const props = defineProps({
   fluid: Boolean,
   outline: Boolean,
   disabled: Boolean,
+  size: {
+    type: String,
+    default: 'normal',
+    validator (value) {
+      return ['large', 'normal', 'small', 'mini'].includes(value)
+    }
+  }
 })
 </script>
 
@@ -19,6 +26,7 @@ const props = defineProps({
     :disabled="disabled?'disabled':false"
     :class="{
       [`k-btn--${type}`]: true,
+      [`k-btn--${size}`]: true,
       'k-btn--fluid': fluid,
       'k-btn--outline': outline,
       'k-btn--disabled': disabled,
@@ -28,18 +36,26 @@ const props = defineProps({
 </template>
 
 <style lang="less" scoped>
-@import '../../css/colors.less';
-@border-width: 0.02rem;
+@import '../../css/vars.less';
+@import './vars.less';
 .k-btn {
   position: relative;
-  font-size: 0.32rem;
-  padding: 0.2rem 0.3rem;
-  border-radius: 0.06rem;
+  border-radius: @border-radius;
   color: @color-default;
   border: @border-width solid @color-default;
   cursor: pointer;
   -webkit-appearance: none;
   outline: none;
+  each(@size-list, .(@size){
+    &--@{size} {
+      @height-key: ~'btn-height-@{size}';
+      @padding-key: ~'btn-padding-@{size}';
+      @font-key: ~'font-size-@{size}';
+      height: @@height-key;
+      padding: 0 @@padding-key;
+      font-size: @@font-key;
+    }
+  })
   each(@type-list, .(@type){
     &--@{type} {
       @color-key: ~'color-@{type}';
