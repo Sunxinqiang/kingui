@@ -24,6 +24,13 @@ const types = ['success', 'primary', 'warning', 'danger', 'default']
       :type="type"
       outline>{{type}}</Button>
   </SectionWrap>
+  <SectionWrap title="禁用：disabled">
+    <Button
+      class="mg-bottom-8 mg-right-8"
+      v-for="type in types"
+      :type="type"
+      disabled>{{type}}</Button>
+  </SectionWrap>
 </template>
 
 <style>
