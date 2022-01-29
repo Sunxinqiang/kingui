@@ -1,7 +1,7 @@
 <style lang="less" scoped>
 .section-wrap {
     .title {
-        line-height: 1rem;
+        line-height: 0.8rem;
     }
 }
 </style>

@@ -8,11 +8,18 @@ const props = defineProps({
     }
   },
   fluid: Boolean,
+  outline: Boolean,
 })
 </script>
 
 <template>
-  <button class="k-btn" :class="{[`k-${type}`]: true, fluid}">
+  <button
+    class="k-btn"
+    :class="{
+      [`k-${type}`]: true,
+      fluid,
+      outline,
+    }">
     <slot></slot>
   </button>
 </template>
@@ -22,7 +29,7 @@ const props = defineProps({
 .k-btn {
   position: relative;
   font-size: 0.32rem;
-  padding: 0.1rem 0.3rem;
+  padding: 0.2rem 0.3rem;
   border-radius: 0.06rem;
   color: @color-default;
   border: 0.02rem solid @color-default;
@@ -32,6 +39,10 @@ const props = defineProps({
       color: #fff;
       border-color: @@color-key;
       background-color:  @@color-key;
+      &.outline {
+        color: @@color-key;
+        background-color: #fff;
+      }
     }
   })
   &.k-default {
