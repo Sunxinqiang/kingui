@@ -1,5 +1,5 @@
 import { createApp, defineAsyncComponent } from 'vue'
-import './css/style.less'
+import '@/css/reset.less'
 import App from './App.vue'
 
 const app = createApp(App)

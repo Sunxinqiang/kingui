@@ -16,12 +16,12 @@ const props = defineProps({
 <template>
   <button
     class="k-btn"
-    :disabled="disabled"
+    :disabled="disabled?'disabled':false"
     :class="{
-      [`k-${type}`]: true,
-      fluid,
-      outline,
-      disabled,
+      [`k-btn--${type}`]: true,
+      'k-btn--fluid': fluid,
+      'k-btn--outline': outline,
+      'k-btn--disabled': disabled,
     }">
     <slot></slot>
   </button>
@@ -38,24 +38,26 @@ const props = defineProps({
   color: @color-default;
   border: @border-width solid @color-default;
   cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
   each(@type-list, .(@type){
-    &.k-@{type} {
+    &--@{type} {
       @color-key: ~'color-@{type}';
       color: #fff;
       border-color: @@color-key;
       background-color:  @@color-key;
-      &.outline {
+      &--outline {
         color: @@color-key;
         background-color: #fff;
       }
     }
   })
-  &.k-default {
+  &--default {
     color: @color-default;
     border-color: lighten(@color-default, 50%);
     background-color: #fff;
   }
-  &.fluid {
+  &--fluid {
     width: 100%;
   }
   &::before {
@@ -69,7 +71,7 @@ const props = defineProps({
   &:active::before {
     opacity: 0.1;
   }
-  &.disabled::before {
+  &--disabled::before {
     opacity: 0.5;
     top: -@border-width; right: -@border-width; bottom: -@border-width; left: -@border-width;
     background: #fff;

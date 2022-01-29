@@ -1,6 +1,21 @@
-<script setup>
-const types = ['success', 'primary', 'warning', 'danger', 'default']
-</script>
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  font-size: 0.28rem;
+  padding: 0.2rem;
+}
+</style>
+<style lang="less" scoped>
+.mg-bottom-8 {
+  margin-bottom: 0.2rem;
+}
+.mg-right-8 {
+  margin-right: 0.2rem;
+}
+</style>
 
 <template>
   <h2 class="text-center">按钮组件</h2>
@@ -33,12 +48,6 @@ const types = ['success', 'primary', 'warning', 'danger', 'default']
   </SectionWrap>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  font-size: 0.28rem;
-}
-</style>
+<script setup>
+const types = ['success', 'primary', 'warning', 'danger', 'default']
+</script>
