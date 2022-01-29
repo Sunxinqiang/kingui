@@ -83,6 +83,7 @@ const props = defineProps({
     top: 0; right: 0; bottom: 0; left: 0;
     background: #000;
     border-color: #000;
+    transition: opacity @transition-fast;
   }
   &:active::before {
     opacity: 0.1;
