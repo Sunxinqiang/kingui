@@ -1,0 +1,1 @@
+import{_ as a}from"./index.48a77ea6.js";import{o,c as r,e,t as n,i as _}from"./vendor.258616af.js";const c={props:{title:String}},i={class:"section-wrap"},d={class:"title"};function l(t,p,s,u,f,v){return o(),r("section",i,[e("h3",d,n(s.title),1),e("div",null,[_(t.$slots,"default",{},void 0,!0)])])}var h=a(c,[["render",l],["__scopeId","data-v-455353be"]]);export{h as default};
