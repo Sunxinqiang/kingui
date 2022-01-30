@@ -9,6 +9,12 @@
 - 改成使用px编写，postcss-pxtorem （TODO）
 - 变量都使用css variables，参考vant（TODO）
 
+#### 2022-1-30
+- 明天过年啦
+- 使用gh-pages推送到github.io
+- 添加主页框架，手机预览框架
+- card组件 （TODO）
+- 手机端项目是否可以提出去，放到一起有点乱（问题）
 
 
 
