@@ -6,7 +6,7 @@ const routes = [
         component: import('@/views/home.vue')
     },
     {
-        path: '/button',
+        path: '/',
         component: import('@/views/button.vue')
     },
     {
