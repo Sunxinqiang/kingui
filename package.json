@@ -8,7 +8,7 @@
     "site": "pnpm site --dir ./packages/kingui",
     "preview": "pnpm dev --dir ./packages/kingui"
   },
-  "packageManager": "pnpm",
+  "packageManager": "pnpm@6.23.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sunxinqiang/kingui.git"
