@@ -24,7 +24,13 @@ const build = {
 }
 
 const siteBuild = {
-  outDir: 'site'
+  outDir: 'site',
+  rollupOptions: {
+    input: {
+      main: path.resolve(__dirname, 'index.html'),
+      mobile: path.resolve(__dirname, 'mobile.html')
+    }
+  }
 }
 
 // https://vitejs.dev/config/

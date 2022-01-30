@@ -29,8 +29,10 @@ importers:
       less: ^4.1.2
       vite: ^2.7.2
       vue: ^3.2.25
+      vue-router: '4'
     dependencies:
       vue: registry.npmmirror.com/vue/3.2.26
+      vue-router: registry.npmmirror.com/vue-router/4.0.12_vue@3.2.26
     devDependencies:
       '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.0.1_vite@2.7.3+vue@3.2.26
       cross-env: registry.npmmirror.com/cross-env/7.0.3
@@ -903,6 +905,12 @@ packages:
     dependencies:
       '@vue/compiler-dom': registry.npmmirror.com/@vue/compiler-dom/3.2.26
       '@vue/shared': registry.npmmirror.com/@vue/shared/3.2.26
+    dev: false
+
+  registry.npmmirror.com/@vue/devtools-api/6.0.0-beta.21.1:
+    resolution: {integrity: sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.0.0-beta.21.1.tgz}
+    name: '@vue/devtools-api'
+    version: 6.0.0-beta.21.1
     dev: false
 
   registry.npmmirror.com/@vue/reactivity-transform/3.2.26:
@@ -2116,6 +2124,18 @@ packages:
     optionalDependencies:
       fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
+
+  registry.npmmirror.com/vue-router/4.0.12_vue@3.2.26:
+    resolution: {integrity: sha512-CPXvfqe+mZLB1kBWssssTiWg4EQERyqJZes7USiqfW9B5N2x+nHlnsM1D3b5CaJ6qgCvMmYJnz+G0iWjNCvXrg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-4.0.12.tgz}
+    id: registry.npmmirror.com/vue-router/4.0.12
+    name: vue-router
+    version: 4.0.12
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      '@vue/devtools-api': registry.npmmirror.com/@vue/devtools-api/6.0.0-beta.21.1
+      vue: registry.npmmirror.com/vue/3.2.26
+    dev: false
 
   registry.npmmirror.com/vue/3.2.26:
     resolution: {integrity: sha512-KD4lULmskL5cCsEkfhERVRIOEDrfEL9CwAsLYpzptOGjaGFNWo3BQ9g8MAb7RaIO71rmVOziZ/uEN/rHwcUIhg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue/download/vue-3.2.26.tgz}
