@@ -5,6 +5,7 @@
     "dev": "pnpm dev --dir ./packages/kingui",
     "docs": "pnpm dev --dir ./packages/docs",
     "build": "pnpm build --dir ./packages/kingui",
+    "site": "pnpm site --dir ./packages/kingui",
     "preview": "pnpm dev --dir ./packages/kingui"
   },
   "packageManager": "pnpm",

@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <KButton>123</KButton>
+  <KButton type="success">123</KButton>
 </template>
 
 <style>
