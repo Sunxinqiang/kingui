@@ -99,7 +99,7 @@ body {
   <div class="center"></div>
   <div class="right">
     <div class="card">
-      <iframe src="/mobile.html" frameborder="0"></iframe>
+      <iframe src="./mobile.html" frameborder="0"></iframe>
     </div>
   </div>
 </template>
