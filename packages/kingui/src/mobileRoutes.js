@@ -11,9 +11,14 @@ const routes = [
         component: () => import('@/views/button.vue')
     },
     {
+        path: '/loading',
+        name: 'loading',
+        component: () => import('@/views/loading.vue')
+    },
+    {
 		path: '/:pathMatch(.*)*',
 		redirect: {
-			name: 'button'
+			name: 'loading'
 		}
 	},
 ]
