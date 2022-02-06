@@ -93,18 +93,23 @@ body {
   <div class="left">
     <div class="group" v-for="group in componentsList">
       <div class="group-title">{{group.name}}</div>
-      <div class="group-item" v-for="com in group.childen">{{com.name}}</div>
+      <div
+        class="group-item"
+        v-for="com in group.childen"
+        @click="onItemClick(com)">{{com.name}}</div>
     </div>
   </div>
   <div class="center"></div>
   <div class="right">
     <div class="card">
-      <iframe src="./mobile.html" frameborder="0"></iframe>
+      <iframe ref="mobile" src="./mobile.html" frameborder="0"></iframe>
     </div>
   </div>
 </template>
 
 <script setup>
+import { getCurrentInstance } from "vue";
+
 const componentsList = [
   {
     name: '开发指南',
@@ -116,10 +121,22 @@ const componentsList = [
   {
     name: '基础组件',
     childen: [
-      { name:  'Button按钮'},
-      { name:  'Loading加载'},
+      { name:  'Button按钮', mobileRoute: 'button'},
+      { name:  'Loading加载', mobileRoute: 'loading'},
       { name:  'Icon图标'},
     ]
   },
 ]
+
+const { ctx } = getCurrentInstance()
+
+const onItemClick = (item) => {
+  if (item.mobileRoute) {
+    let mobileWindow = ctx.$refs.mobile.contentWindow
+    mobileWindow.postMessage({
+      type: 'go-route',
+      routeName: item.mobileRoute
+    })
+  }
+}
 </script>
