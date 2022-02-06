@@ -29,8 +29,7 @@
       form="form2"></Loading>
     <Loading
       class="mg-bottom-8 mg-right-8"
-      color="purple"
-      form="form2"></Loading>
+      color="purple"></Loading>
   </SectionWrap>
   <SectionWrap title="大小：size">
     <Loading

@@ -76,13 +76,13 @@ const props = defineProps({
     border-width: 1px;
     border-style: solid;
     border-radius: 50%;
-    border-top-color: transparent;
-    background: transparent;
+    border-top-color: transparent !important;
+    background: transparent !important;
     animation: loading-form1 infinite 0.75s linear;
   }
   &--form2 {
     border-radius: 50%;
-    border: none;
+    border: none !important;
     animation: loading-form2 infinite 0.75s linear;
   }
 }
