@@ -1,8 +1,11 @@
 import { createApp, defineAsyncComponent } from 'vue'
 import '@/css/reset.less'
 import App from './App.vue'
+import router from './routes'
 
 const app = createApp(App)
+
+app.use(router)
 
 Object.entries(import.meta.glob('./sitecomponents/*.vue')).forEach(item => {
     let name = item[0].replace(/\.\/sitecomponents\/(.+)\.vue/, '$1')

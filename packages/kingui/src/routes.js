@@ -1,14 +1,25 @@
+import {createRouter, createWebHashHistory} from 'vue-router'
+
 const routes = [
     {
         path: '/home',
-        component: import('@/views/home.vue')
+        name: 'home',
+        component: () => import('../README.md')
     },
     {
         path: '/button',
-        component: import('@/views/button.vue')
+        name: 'button',
+        component: () => import('@/components/button/README.md')
     },
     {
-        path: '*',
-        redirect: '/home'
-    }
+		path: '/:pathMatch(.*)*',
+		redirect: {
+			name: 'home'
+		}
+	},
 ]
+
+export default createRouter({
+    history: createWebHashHistory(),
+    routes
+})

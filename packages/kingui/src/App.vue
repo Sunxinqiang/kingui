@@ -56,6 +56,9 @@ body {
 }
 .center {
   padding: 60px 390px 40px 220px;
+  .content {
+    padding: 0 20px;
+  }
 }
 .right {
   position: fixed;
@@ -99,7 +102,9 @@ body {
         @click="onItemClick(com)">{{com.name}}</div>
     </div>
   </div>
-  <div class="center"></div>
+  <div class="center">
+    <router-view class="content"></router-view>
+  </div>
   <div class="right">
     <div class="card">
       <iframe ref="mobile" src="./mobile.html" frameborder="0"></iframe>
@@ -109,6 +114,8 @@ body {
 
 <script setup>
 import { getCurrentInstance } from "vue";
+import { useRouter } from 'vue-router'
+const router = useRouter();
 
 const componentsList = [
   {
@@ -121,8 +128,8 @@ const componentsList = [
   {
     name: '基础组件',
     childen: [
-      { name:  'Button按钮', mobileRoute: 'button'},
-      { name:  'Loading加载', mobileRoute: 'loading'},
+      { name:  'Button按钮', id: 'button'},
+      { name:  'Loading加载', id: 'loading'},
       { name:  'Icon图标'},
     ]
   },
@@ -131,11 +138,14 @@ const componentsList = [
 const { ctx } = getCurrentInstance()
 
 const onItemClick = (item) => {
-  if (item.mobileRoute) {
+  if (item.id) {
     let mobileWindow = ctx.$refs.mobile.contentWindow
     mobileWindow.postMessage({
       type: 'go-route',
-      routeName: item.mobileRoute
+      routeName: item.id
+    })
+    router.push({
+      name: item.id
     })
   }
 }
