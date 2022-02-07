@@ -4,11 +4,12 @@ function mdLoader(code) {
     code = code.replace(/"/g, '\'')
     return `
       <template>
-        <Markdown source="${code}" />
+      <Markdown class="markdown-body" source="${code}" />
       </template>
       <script setup>
         import Markdown from 'vue3-markdown-it';
         import 'highlight.js/styles/github.css';
+        // import 'highlight.js/styles/monokai.css';
       </script>
     `
 }

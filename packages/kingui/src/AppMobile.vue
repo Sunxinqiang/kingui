@@ -32,9 +32,15 @@ const router = useRouter();
 window.addEventListener('message', (evt) => {
     let data = evt.data
     if (data.type == 'go-route') {
-        router.push({
-            name: data.routeName
-        })
+        try {
+            router.push({
+                name: data.routeName
+            })
+        } catch (error) {
+            router.push({
+                path: '/'
+            })
+        }
     }
 })
 </script>

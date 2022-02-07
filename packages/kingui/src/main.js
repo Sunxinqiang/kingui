@@ -1,5 +1,6 @@
 import { createApp, defineAsyncComponent } from 'vue'
 import '@/css/reset.less'
+import '@/css/githubmd.less'
 import App from './App.vue'
 import router from './routes'
 

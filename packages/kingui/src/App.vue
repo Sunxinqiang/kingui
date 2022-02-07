@@ -55,9 +55,11 @@ body {
   }
 }
 .center {
-  padding: 60px 390px 40px 220px;
+  padding: 80px 400px 40px 230px;
   .content {
-    padding: 0 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
   }
 }
 .right {
@@ -88,7 +90,6 @@ body {
 <template>
   <div class="header">
     <div class="logo">
-      <!-- <img class="logo-img" src="@/assets/logo.png"> -->
       <div class="logo-img">👑</div>
       <span>KingUI</span>
     </div>
@@ -121,8 +122,8 @@ const componentsList = [
   {
     name: '开发指南',
     childen: [
-      { name:  '介绍'},
-      { name:  '快速上手'},
+      { name:  '介绍', id: 'home'},
+      { name:  '快速上手', id: 'quickstart'},
     ]
   },
   {

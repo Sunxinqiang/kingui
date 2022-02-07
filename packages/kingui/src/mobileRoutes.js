@@ -3,6 +3,7 @@ import {createRouter, createWebHashHistory} from 'vue-router'
 const routes = [
     {
         path: '/home',
+        name: 'home',
         component: () => import('@/views/home.vue')
     },
     {
@@ -18,7 +19,7 @@ const routes = [
     {
 		path: '/:pathMatch(.*)*',
 		redirect: {
-			name: 'loading'
+			name: 'home'
 		}
 	},
 ]
