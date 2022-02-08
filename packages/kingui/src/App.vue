@@ -114,7 +114,7 @@ body {
 </template>
 
 <script setup>
-import { getCurrentInstance } from "vue";
+import { ref, getCurrentInstance } from "vue";
 import { useRouter } from 'vue-router'
 const router = useRouter();
 
@@ -136,11 +136,11 @@ const componentsList = [
   },
 ]
 
-const { ctx } = getCurrentInstance()
+const mobile = ref(null)
 
 const onItemClick = (item) => {
   if (item.id) {
-    let mobileWindow = ctx.$refs.mobile.contentWindow
+    let mobileWindow = mobile.value.contentWindow
     mobileWindow.postMessage({
       type: 'go-route',
       routeName: item.id
