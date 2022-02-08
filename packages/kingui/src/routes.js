@@ -22,6 +22,11 @@ const routes = [
         component: () => import('@/components/loading/README.md')
     },
     {
+        path: '/icon',
+        name: 'icon',
+        component: () => import('@/components/icon/README.md')
+    },
+    {
 		path: '/:pathMatch(.*)*',
 		redirect: {
 			name: 'home'

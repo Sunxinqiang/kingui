@@ -17,6 +17,11 @@ const routes = [
         component: () => import('@/views/loading.vue')
     },
     {
+        path: '/icon',
+        name: 'icon',
+        component: () => import('@/views/icon.vue')
+    },
+    {
 		path: '/:pathMatch(.*)*',
 		redirect: {
 			name: 'home'

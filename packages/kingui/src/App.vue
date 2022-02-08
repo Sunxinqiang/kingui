@@ -131,7 +131,7 @@ const componentsList = [
     childen: [
       { name:  'Button按钮', id: 'button'},
       { name:  'Loading加载', id: 'loading'},
-      { name:  'Icon图标'},
+      { name:  'Icon图标', id: 'icon'},
     ]
   },
 ]
