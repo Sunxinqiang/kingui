@@ -48,5 +48,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src')
     }
   },
-  build: isSite ? siteBuild: build
+  build: isSite ? siteBuild: build,
+  preview: {
+    port: 8090
+  }
 })
