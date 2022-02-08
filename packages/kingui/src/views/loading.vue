@@ -10,32 +10,41 @@
 <template>
   <h2 class="text-center">Loading组件</h2>
   <SectionWrap title="形式：form">
-    <Loading
+    <ItemWrap
       class="mg-bottom-8 mg-right-8"
       v-for="form in forms"
-      :form="form"></Loading>
+      :title="form">
+      <Loading :form="form"></Loading>
+    </ItemWrap>
   </SectionWrap>
   <SectionWrap title="类型：type">
-    <Loading
+    <ItemWrap
       class="mg-bottom-8 mg-right-8"
       v-for="type in types"
-      :type="type"
-      form="form2"></Loading>
+      :title="type">
+      <Loading :type="type" form="form2"></Loading>
+    </ItemWrap>
   </SectionWrap>
   <SectionWrap title="自定义颜色：color">
-    <Loading
-      class="mg-bottom-8 mg-right-8"
-      color="pink"
-      form="form2"></Loading>
-    <Loading
-      class="mg-bottom-8 mg-right-8"
-      color="purple"></Loading>
+    <ItemWrap title="pink" class="mg-bottom-8 mg-right-8">
+      <Loading
+        color="pink"
+        form="form2"></Loading>
+    </ItemWrap>
+    <ItemWrap title="#666" class="mg-bottom-8 mg-right-8">
+      <Loading
+        color="#666"
+        form="form2"></Loading>
+    </ItemWrap>
   </SectionWrap>
   <SectionWrap title="大小：size">
-    <Loading
+    <ItemWrap
       class="mg-bottom-8 mg-right-8"
-      v-for="size in sizes"
-      :size="size"></Loading>
+      v-for="(size,index) in sizes"
+      :title="size"
+      align="bottom">
+      <Loading :size="size" :type="types[index]"></Loading>
+    </ItemWrap>
   </SectionWrap>
 </template>
 
