@@ -39,6 +39,7 @@ const vuePlugin = createVuePlugin({ include: [/\.vue$/, /\.md$/] })
 // https://vitejs.dev/config/
 export default defineConfig({
   base: isSite ? './': '/',
+  publicDir: isSite ? 'public' : false,
   plugins: [
     createMdPlugin(vuePlugin),
     vuePlugin
