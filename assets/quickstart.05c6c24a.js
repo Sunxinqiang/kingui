@@ -1,1 +1,0 @@
-import{M as n}from"./github.80218eba.js";import{o,m as r,q as s}from"./vendor.1cb86687.js";const p={setup(e){return(a,i)=>(o(),r(s(n),{class:"markdown-body",source:"# \u5FEB\u901F\u5F00\u59CB\n## \u5B89\u88C5\n```shell\nnpm i kingui\n```\n\n## \u4F7F\u7528\n```js\nimport KingUI from 'kingui'\n\napp.use(KingUI)\n```"}))}};export{p as default};
