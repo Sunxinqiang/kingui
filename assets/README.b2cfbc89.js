@@ -1,1 +1,0 @@
-import{M as a}from"./github.2eff9440.js";import{o as r,m as n,q as o}from"./vendor.1d5f75a0.js";const d={setup(e){return(s,c)=>(r(),n(o(a),{class:"markdown-body",source:"## Loading\n\n```js\nvar a = 'aaa';\nvar b = 'ccc';\nvar c = `\n    hehe\n`\n```"}))}};export{d as default};

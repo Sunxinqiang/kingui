@@ -1,4 +1,4 @@
-import{M as n}from"./github.2eff9440.js";import{o as a,m as r,q as e}from"./vendor.1d5f75a0.js";const u={setup(o){return(s,t)=>(a(),r(e(n),{class:"markdown-body",source:`# KingUI
+import{M as n}from"./github.2eff9440.js";import{o as r,m as e,q as o}from"./vendor.1d5f75a0.js";const u={setup(a){return(t,s)=>(r(),e(o(n),{class:"markdown-body",source:`# KingUI
 > \u91CD\u91CF\u3001\u4E0D\u53EF\u9760\u7684\u79FB\u52A8\u7AEF\u7EC4\u4EF6\u5E93
 
 ### \u4ECB\u7ECD
@@ -28,21 +28,10 @@ Vant 3 \u652F\u6301\u73B0\u4EE3\u6D4F\u89C8\u5668\u4EE5\u53CA Chrome >= 51\u3001
 
 ### \u8D21\u732E\u8005\u4EEC
 - \u674E\u56DB
-1. \u963F\u8428\u5FB7
-2. \u624B\u52A8\u9600
 
 ### \u8D21\u732E\u6307\u5357
 
 ### \u5F00\u6E90\u534F\u8BAE
 
 \u672C\u9879\u76EE\u57FA\u4E8E [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89) \u534F\u8BAE\uFF0C\u8BF7\u81EA\u7531\u5730\u4EAB\u53D7\u548C\u53C2\u4E0E\u5F00\u6E90
-
-\`\`\`js
-var a = 123
-\`\`\`
-
-|  a    |    a  |   a   |
-| ---- | ---- | ---- |
-|   a   |   a   |  a    |
-|   c   | c     |  c    |
-|    d  |   d   |      |`}))}};export{u as default};
+`}))}};export{u as default};
