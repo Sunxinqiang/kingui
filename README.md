@@ -5,14 +5,25 @@ vue mobile components
 [Log](./LOG.md)
 
 ## TODO
+
+#### 组件
+- [ ] Button 按钮支持 loading、Icon、outLine
+- [ ] Icon 字体文件现在只支持woff2，其他cdn引入？
+- [ ] 虚拟列表
+#### 配置
 - [x] 文档 github.io
-- [ ] Travis CI
-- [ ] 单测60%
-- [ ] 支持全部引入，部分引入
+- [x] 支持全部引入
+- [ ] 支持按需引入
+- [ ] md使用 markdown-it处理
+- [ ] md支持HTML
+- [ ] md双引号问题处理
+- [ ] highlight.js样式太大 cdn引入？
+- [ ] 首页md样式优化
 - [ ] ts重构
 - [ ] 自定义theme
 - [ ] react
-- [ ] 虚拟列表
+- [ ] Travis CI
+- [ ] 单测60%
 
 ## Components
 #### 基础组件
