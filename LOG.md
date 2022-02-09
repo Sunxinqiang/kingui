@@ -15,7 +15,7 @@
 - 添加主页框架，手机预览框架
 - card组件 （TODO）
 - 手机端项目是否可以提出去，放到一起有点乱（问题）
-- 使用自己的域名绑定github.io  如 kingui.sunxq.top （TODO）
+- 使用自己的域名绑定github.io  如 kingui.sunxq.top （TODO）（DONE）
 
 #### 2022-2-6
 - 添加loading组件
