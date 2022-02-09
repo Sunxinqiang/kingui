@@ -27,7 +27,7 @@
 - 添加icon图标组件，字体库用的vant的
 - 字体文件只用了woff2，兼容性应该不够 （问题）
 - 添加了gh-page的域名
-- github太卡了，gh-page发布到gitee上 （TODO）
+- github太卡了，gh-page发布到gitee上 （TODO）(gitee镜像功能需要申请开通，且gitee pages需要实名认证，不搞了)
 
 
 
