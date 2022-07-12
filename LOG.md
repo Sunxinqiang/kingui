@@ -29,6 +29,9 @@
 - 添加了gh-page的域名
 - github太卡了，gh-page发布到gitee上 （TODO）(gitee镜像功能需要申请开通，且gitee pages需要实名认证，不搞了)
 
+#### 2022-7-12
+- src和mobile分离,components提出
+
 
 
 
