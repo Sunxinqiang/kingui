@@ -32,7 +32,7 @@ const props = defineProps({
 </template>
 
 <style lang="less" scoped>
-@import '../../css/vars.less';
+@import '@css/vars.less';
 @import "./font-woff2.less";
 .k-icon {
   each(@type-list, .(@type){

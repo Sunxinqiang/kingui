@@ -14,17 +14,17 @@ const routes = [
     {
         path: '/button',
         name: 'button',
-        component: () => import('@/components/button/README.md')
+        component: () => import('@components/button/README.md')
     },
     {
         path: '/loading',
         name: 'loading',
-        component: () => import('@/components/loading/README.md')
+        component: () => import('@components/loading/README.md')
     },
     {
         path: '/icon',
         name: 'icon',
-        component: () => import('@/components/icon/README.md')
+        component: () => import('@components/icon/README.md')
     },
     {
 		path: '/:pathMatch(.*)*',

@@ -8,7 +8,7 @@ const isSite = process.env.ENV === 'site';
 const build = {
   cssCodeSplit: false,
   lib: {
-    entry: path.resolve(__dirname, 'src/export.js'),
+    entry: path.resolve(__dirname, 'export.js'),
     name: 'KingUI',
     fileName: (format) => `kingui.${format}.js`
   },
@@ -46,7 +46,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, 'src'),
+      '@mobile': path.resolve(__dirname, 'mobile'),
+      '@css': path.resolve(__dirname, 'css'),
+      '@components': path.resolve(__dirname, 'components'),
     }
   },
   build: isSite ? siteBuild: build,

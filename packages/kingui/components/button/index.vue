@@ -36,7 +36,7 @@ const props = defineProps({
 </template>
 
 <style lang="less" scoped>
-@import '../../css/vars.less';
+@import '@css/vars.less';
 @import './vars.less';
 .k-btn {
   position: relative;

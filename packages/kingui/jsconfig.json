@@ -4,11 +4,23 @@
         "paths": {
             "@/*": [
                 "src/*"
-            ]
+            ],
+            "@mobile/*": [
+                "mobile/*"
+            ],
+            "@css/*": [
+                "css/*"
+            ],
+            "@components/*": [
+                "components/*"
+            ],
         }
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "mobile/**/*",
+        "css/**/*",
+        "components/**/*",
     ],
     "exclude": [
         "node_modules"

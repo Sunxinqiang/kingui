@@ -58,7 +58,7 @@
 </template>
 
 <script setup>
-import names from '@/components/icon/names'
+import names from '@components/icon/names'
 const types = ['success', 'primary', 'warning', 'danger', 'default']
 const sizes = ['0.8rem', '0.6rem', '0.4rem', '0.3rem']
 </script>

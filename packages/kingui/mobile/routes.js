@@ -4,22 +4,22 @@ const routes = [
     {
         path: '/home',
         name: 'home',
-        component: () => import('@/views/home.vue')
+        component: () => import('@mobile/views/home.vue')
     },
     {
         path: '/button',
         name: 'button',
-        component: () => import('@/views/button.vue')
+        component: () => import('@mobile/views/button.vue')
     },
     {
         path: '/loading',
         name: 'loading',
-        component: () => import('@/views/loading.vue')
+        component: () => import('@mobile/views/loading.vue')
     },
     {
         path: '/icon',
         name: 'icon',
-        component: () => import('@/views/icon.vue')
+        component: () => import('@mobile/views/icon.vue')
     },
     {
 		path: '/:pathMatch(.*)*',
