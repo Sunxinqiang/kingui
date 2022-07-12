@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build-site": "cross-env ENV=site vite build",
-    "publish-site": "gh-pages -d site",
+    "publish-site": "gh-pages -d dist-site",
     "site": "pnpm build-site && pnpm publish-site",
     "preview": "cross-env ENV=site vite preview"
   },

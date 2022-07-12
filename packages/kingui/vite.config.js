@@ -25,7 +25,7 @@ const build = {
 }
 
 const siteBuild = {
-  outDir: 'site',
+  outDir: 'dist-site',
   rollupOptions: {
     input: {
       main: path.resolve(__dirname, 'index.html'),
