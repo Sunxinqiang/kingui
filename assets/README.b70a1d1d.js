@@ -1,4 +1,4 @@
-import{M as n}from"./github.2eff9440.js";import{o,m as a,q as i}from"./vendor.1d5f75a0.js";const t={setup(r){return(s,e)=>(o(),a(i(n),{class:"markdown-body",source:`# Loading \u7EC4\u4EF6
+import{M as n}from"./github.eededf59.js";import{o,k as a,l as i}from"./vendor.3fade709.js";const t={setup(e){return(r,s)=>(o(),a(i(n),{class:"markdown-body",source:`# Loading \u7EC4\u4EF6
 ## \u57FA\u672C\u7528\u6CD5
 \`\`\`html
 <Loading></Loading>

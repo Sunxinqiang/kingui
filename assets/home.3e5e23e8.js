@@ -1,4 +1,4 @@
-import{M as n}from"./github.2eff9440.js";import{o as r,m as e,q as o}from"./vendor.1d5f75a0.js";const u={setup(a){return(t,s)=>(r(),e(o(n),{class:"markdown-body",source:`# KingUI
+import{M as n}from"./github.eededf59.js";import{o as e,k as r,l as o}from"./vendor.3fade709.js";const u={setup(a){return(t,s)=>(e(),r(o(n),{class:"markdown-body",source:`# KingUI
 > \u91CD\u91CF\u3001\u4E0D\u53EF\u9760\u7684\u79FB\u52A8\u7AEF\u7EC4\u4EF6\u5E93
 
 ### \u4ECB\u7ECD
