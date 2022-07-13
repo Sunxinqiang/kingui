@@ -3,6 +3,17 @@ import '@css/reset.less'
 import '@/css/githubmd.less'
 import App from './App.vue'
 import router from './routes'
+import Stat from '@vastness/stat-sdk'
+
+try {
+    new Stat({
+        url: 'https://api.sunxq.top/stat/sa.gif',
+        isSinglePage: true,
+        clickIncludes: ['BUTTON', 'A']
+    })
+  } catch (error) {
+    console.log(error)
+  }
 
 const app = createApp(App)
 
